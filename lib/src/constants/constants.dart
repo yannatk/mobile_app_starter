@@ -2,7 +2,7 @@ class Constants {
   static const String backendBaseUrl = 'http://127.0.0.1:3000';
 
   static const String aboutTitleSectionText =
-      'Bienvenue sur Fridge2Plate, l’application révolutionnaire qui transforme '
+      'Bienvenue sur App, l’application révolutionnaire qui transforme '
       'les ingrédients de votre réfrigérateur en délicieuses recettes. '
       'Que vous soyez un cuisinier amateur ou un chef chevronné, '
       'notre technologie utilise l’intelligence artificielle de ChatGPT '
@@ -23,10 +23,10 @@ class Constants {
 
   static const String aboutContactSectionText =
       'Pour toute question ou suggestion, '
-      'n’hésitez pas à nous contacter via contact@fridge2plate.fr.';
+      'n’hésitez pas à nous contacter via contact@app.fr.';
 
   static const String privacyPolicyIntroSectionText =
-      'Chez Fridge2Plate, nous prenons votre vie privée très au sérieux. '
+      'Chez App, nous prenons votre vie privée très au sérieux. '
       'Cette politique de confidentialité décrit comment nous collectons, '
       'utilisons, partageons et protégeons les informations personnelles '
       'que vous nous fournissez en utilisant notre application.';
@@ -53,13 +53,13 @@ class Constants {
       'l’accès non autorisé et les pertes.';
 
   static const String termsAndConditionsAcceptanceSectionText =
-      'En téléchargeant et utilisant Fridge2Plate, '
+      'En téléchargeant et utilisant App, '
       'vous acceptez ces termes et conditions. Si vous n’êtes pas '
       'd’accord avec l’un de ces termes, '
       'veuillez ne pas utiliser notre application.';
 
   static const String termsAndConditionsLicenseSectionText =
-      'Fridge2Plate vous accorde une licence limitée, '
+      'App vous accorde une licence limitée, '
       'non exclusive et révocable pour utiliser notre '
       'application pour votre usage personnel et non commercial.';
 
@@ -75,5 +75,5 @@ class Constants {
 
   static const String termsAndConditionsContactSectionText =
       'Pour des questions relatives à ces termes, '
-      'veuillez nous contacter via contact@fridge2plate.fr.';
+      'veuillez nous contacter via contact@App.fr.';
 }
