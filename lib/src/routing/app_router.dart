@@ -1,3 +1,4 @@
+//TODO(dev): remove this
 // ignore_for_file: dead_code
 
 import 'package:flutter/material.dart';
@@ -68,6 +69,7 @@ final goRouterProvider = Provider<GoRouter>((ref) {
     initialLocation: '/',
     debugLogDiagnostics: true,
     redirect: (context, state) {
+      // TODO(dev): Get the log in status
       const isLoggedIn = true;
 
       if (isLoggedIn) {

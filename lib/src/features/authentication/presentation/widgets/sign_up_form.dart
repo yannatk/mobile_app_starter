@@ -32,6 +32,7 @@ class _EmailPasswordAuthFormState extends ConsumerState<SignUpForm>
     setState(() => _submitted = true);
 
     if (_formKey.currentState!.validate()) {
+      // TODO(dev): Add sign up logic
       debugPrint('$email, $password, $confirmPassword');
     }
   }

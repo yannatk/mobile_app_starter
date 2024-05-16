@@ -28,6 +28,7 @@ class _SignInFormState extends ConsumerState<SignInForm> with BaseValidators {
     setState(() => _submitted = true);
 
     if (_formKey.currentState!.validate()) {
+      // TODO(dev): Add sign in logic
       debugPrint('$_email and $_password');
     }
   }

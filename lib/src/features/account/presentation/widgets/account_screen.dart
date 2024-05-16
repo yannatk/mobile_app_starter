@@ -79,6 +79,7 @@ class _AccountScreenState extends ConsumerState<AccountScreen> {
             Center(
               child: AppTextButton(
                 text: 'Sign out'.hardcoded,
+                // TODO(dev): Add sign out logic
                 onPressed: () => (),
               ),
             ),
