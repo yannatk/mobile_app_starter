@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:mobile_app_starter/src/constants/app_colors.dart';
+import 'package:mobile_app_starter/src/localization/string_hardcoded.dart';
 
 class AppBottomNavigationBar extends StatelessWidget {
   const AppBottomNavigationBar({
@@ -22,26 +24,28 @@ class AppBottomNavigationBar extends StatelessWidget {
       bottomNavigationBar: NavigationBar(
         onDestinationSelected: _goBranch,
         selectedIndex: navigationShell.currentIndex,
-        destinations: const [
+        destinations: [
           NavigationDestination(
-            selectedIcon: Icon(Icons.home_filled),
-            icon: Icon(Icons.home),
-            label: 'Home',
+            selectedIcon: const Icon(Icons.home_filled, color: AppColors.white),
+            icon: const Icon(Icons.home),
+            label: 'Home'.hardcoded,
           ),
           NavigationDestination(
-            selectedIcon: Icon(Icons.ac_unit_outlined),
-            icon: Icon(Icons.ac_unit_outlined),
-            label: 'ScreenTwo',
+            selectedIcon:
+                const Icon(Icons.ac_unit_outlined, color: AppColors.white),
+            icon: const Icon(Icons.ac_unit_outlined),
+            label: 'ScreenTwo'.hardcoded,
           ),
           NavigationDestination(
-            selectedIcon: Icon(Icons.access_time_filled),
-            icon: Icon(Icons.access_time),
-            label: 'ScreenThree',
+            selectedIcon:
+                const Icon(Icons.access_time_filled, color: AppColors.white),
+            icon: const Icon(Icons.access_time),
+            label: 'ScreenThree'.hardcoded,
           ),
           NavigationDestination(
-            selectedIcon: Icon(Icons.settings),
-            icon: Icon(Icons.settings),
-            label: 'Account',
+            selectedIcon: const Icon(Icons.settings, color: AppColors.white),
+            icon: const Icon(Icons.settings),
+            label: 'Account'.hardcoded,
           ),
         ],
       ),

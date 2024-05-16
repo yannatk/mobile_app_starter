@@ -3,6 +3,7 @@ import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:mobile_app_starter/src/localization/string_hardcoded.dart';
 
 const kDialogDefaultKey = Key('dialog-default-key');
 
@@ -63,5 +64,5 @@ Future<void> showExceptionAlertDialog({
 Future<void> showNotImplementedAlertDialog({required BuildContext context}) =>
     showAlertDialog(
       context: context,
-      title: 'Not implemented',
+      title: 'Not implemented'.hardcoded,
     );

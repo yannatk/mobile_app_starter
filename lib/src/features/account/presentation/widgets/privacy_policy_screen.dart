@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app_starter/src/constants/app_sizes.dart';
 import 'package:mobile_app_starter/src/constants/constants.dart';
+import 'package:mobile_app_starter/src/localization/string_hardcoded.dart';
 import 'package:mobile_app_starter/src/shared/widgets/app_text_body.dart';
 import 'package:mobile_app_starter/src/shared/widgets/app_text_heading.dart';
 
@@ -11,33 +12,38 @@ class PrivacyPolicyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Politique de Confidentialité'),
+        title: Text('Privacy Policy'.hardcoded),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(
             horizontal: Sizes.p16, vertical: Sizes.p16),
         child: ListView(
-          children: const [
+          children: [
             gapH16,
-            AppTextHeading(text: 'Introduction'),
+            AppTextHeading(text: 'Introduction'.hardcoded),
             gapH4,
-            AppTextBody(text: Constants.privacyPolicyIntroSectionText),
+            const AppTextBody(text: Constants.privacyPolicyIntroSectionText),
             gapH4,
-            AppTextHeading(text: 'Collecte d’informations'),
+            AppTextHeading(
+                text: 'Collection of personal information'.hardcoded),
             gapH4,
-            AppTextBody(text: Constants.privacyPolicyDataCollectedSectionText),
+            const AppTextBody(
+                text: Constants.privacyPolicyDataCollectedSectionText),
             gapH4,
-            AppTextHeading(text: 'Utilisation des informations'),
+            AppTextHeading(
+                text: 'Use and processing of collected information'.hardcoded),
             gapH4,
-            AppTextBody(text: Constants.privacyPolicyDataUsageSectionText),
+            const AppTextBody(
+                text: Constants.privacyPolicyDataUsageSectionText),
             gapH4,
-            AppTextHeading(text: 'Partage d’informations'),
+            AppTextHeading(text: 'Information sharing'.hardcoded),
             gapH4,
-            AppTextBody(text: Constants.privacyPolicyDataSharingSectionText),
+            const AppTextBody(
+                text: Constants.privacyPolicyDataSharingSectionText),
             gapH4,
-            AppTextHeading(text: 'Sécurité'),
+            AppTextHeading(text: 'Information security'.hardcoded),
             gapH4,
-            AppTextBody(text: Constants.privacyPolicySecuritySectionText),
+            const AppTextBody(text: Constants.privacyPolicySecuritySectionText),
             gapH16,
           ],
         ),

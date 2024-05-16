@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:mobile_app_starter/src/localization/string_hardcoded.dart';
 import 'package:mobile_app_starter/src/shared/widgets/app_list_tile.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -30,22 +31,22 @@ class SendRequestScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Faire une demande'),
+        title: Text('Send Request'.hardcoded),
       ),
       body: Column(
         children: [
           AppListTile(
-            title: 'Envoyer un feedback',
-            onTap: () => sendRequest(subject: 'Envoyer un feedback'),
+            title: 'Send a feedback'.hardcoded,
+            onTap: () => sendRequest(subject: 'Send a feedback'.hardcoded),
           ),
           AppListTile(
-            title: 'Demander une nouvelle fonctionnalité',
+            title: 'Request a new feature'.hardcoded,
             onTap: () =>
-                sendRequest(subject: 'Demander une nouvelle fonctionnalité'),
+                sendRequest(subject: 'Request a new feature'.hardcoded),
           ),
           AppListTile(
-            title: 'Reporter un bug',
-            onTap: () => sendRequest(subject: 'Reporter un bug'),
+            title: 'Report a bug'.hardcoded,
+            onTap: () => sendRequest(subject: 'Report a bug'.hardcoded),
           ),
         ],
       ),

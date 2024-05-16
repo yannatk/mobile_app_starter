@@ -4,6 +4,7 @@ import 'package:mobile_app_starter/src/constants/app_colors.dart';
 import 'package:mobile_app_starter/src/constants/app_sizes.dart';
 import 'package:mobile_app_starter/src/features/authentication/presentation/utils/base_validators.dart';
 import 'package:mobile_app_starter/src/features/authentication/presentation/widgets/password_field.dart';
+import 'package:mobile_app_starter/src/localization/string_hardcoded.dart';
 import 'package:mobile_app_starter/src/shared/widgets/primary_button.dart';
 
 class SignUpForm extends ConsumerStatefulWidget {
@@ -53,13 +54,13 @@ class _EmailPasswordAuthFormState extends ConsumerState<SignUpForm>
             autocorrect: false,
             enableSuggestions: false,
             controller: _emailController,
-            decoration: const InputDecoration(
-              labelText: 'Email',
-              labelStyle: TextStyle(color: AppColors.grey),
-              focusedBorder: UnderlineInputBorder(
+            decoration: InputDecoration(
+              labelText: 'Email'.hardcoded,
+              labelStyle: const TextStyle(color: AppColors.grey),
+              focusedBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: AppColors.grey),
               ),
-              enabledBorder: UnderlineInputBorder(
+              enabledBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: AppColors.grey),
               ),
             ),
@@ -77,15 +78,14 @@ class _EmailPasswordAuthFormState extends ConsumerState<SignUpForm>
           ),
           PasswordField(
             controller: _repeatPasswordController,
-            labelText: 'Répéter le mot de passe',
+            labelText: 'Repeat password'.hardcoded,
             validator: (confirmPassword) => !_submitted
                 ? null
                 : confirmPasswordErrorText(password, confirmPassword ?? ''),
           ),
           gapH16,
           PrimaryButton(
-            key: const ValueKey('signUpButton'),
-            text: 'S’inscrire',
+            text: 'Register'.hardcoded,
             onPressed: onSignUp,
           ),
         ],

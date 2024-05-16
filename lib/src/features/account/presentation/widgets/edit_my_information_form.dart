@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:mobile_app_starter/src/constants/app_colors.dart';
 import 'package:mobile_app_starter/src/constants/app_sizes.dart';
 import 'package:mobile_app_starter/src/features/authentication/presentation/utils/base_validators.dart';
+import 'package:mobile_app_starter/src/localization/string_hardcoded.dart';
 import 'package:mobile_app_starter/src/routing/app_router.dart';
 import 'package:mobile_app_starter/src/shared/widgets/primary_button.dart';
 
@@ -38,11 +39,12 @@ class _EditMyInformationFormState extends ConsumerState<EditMyInformationForm>
     setState(() => _submitted = true);
 
     if (_formKey.currentState!.validate()) {
+      debugPrint('$_firstName, $_lastName');
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(
+        SnackBar(
           content: Text(
-            'Vos informations ont été mises à jour',
-            style: TextStyle(color: AppColors.white),
+            'Info updated successfully'.hardcoded,
+            style: const TextStyle(color: AppColors.white),
           ),
           backgroundColor: AppColors.green,
         ),
@@ -62,13 +64,13 @@ class _EditMyInformationFormState extends ConsumerState<EditMyInformationForm>
             autocorrect: false,
             enableSuggestions: false,
             controller: _lastNameController,
-            decoration: const InputDecoration(
-              labelText: 'Nom',
-              labelStyle: TextStyle(color: AppColors.grey),
-              focusedBorder: UnderlineInputBorder(
+            decoration: InputDecoration(
+              labelText: 'Last name'.hardcoded,
+              labelStyle: const TextStyle(color: AppColors.grey),
+              focusedBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: AppColors.grey),
               ),
-              enabledBorder: UnderlineInputBorder(
+              enabledBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: AppColors.grey),
               ),
             ),
@@ -82,25 +84,26 @@ class _EditMyInformationFormState extends ConsumerState<EditMyInformationForm>
             autocorrect: false,
             enableSuggestions: false,
             controller: _firstNameController,
-            decoration: const InputDecoration(
-              labelText: 'Prénom',
-              labelStyle: TextStyle(color: AppColors.grey),
-              focusedBorder: UnderlineInputBorder(
+            decoration: InputDecoration(
+              labelText: 'First name'.hardcoded,
+              labelStyle: const TextStyle(color: AppColors.grey),
+              focusedBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: AppColors.grey),
               ),
-              enabledBorder: UnderlineInputBorder(
+              enabledBorder: const UnderlineInputBorder(
                 borderSide: BorderSide(color: AppColors.grey),
               ),
             ),
             keyboardType: TextInputType.text,
             autovalidateMode: AutovalidateMode.always,
-            validator: (firstName) =>
-                !_submitted ? null : fieldErrorText(firstName ?? '', 'Prénom'),
+            validator: (firstName) => !_submitted
+                ? null
+                : fieldErrorText(firstName ?? '', 'First name'.hardcoded),
             textInputAction: TextInputAction.done,
           ),
           gapH32,
           PrimaryButton(
-            text: 'Enregistrer',
+            text: 'Save'.hardcoded,
             onPressed: onSave,
           ),
         ],

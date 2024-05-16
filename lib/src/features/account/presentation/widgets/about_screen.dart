@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app_starter/src/constants/app_sizes.dart';
 import 'package:mobile_app_starter/src/constants/constants.dart';
+import 'package:mobile_app_starter/src/localization/string_hardcoded.dart';
 import 'package:mobile_app_starter/src/shared/widgets/app_text_body.dart';
 import 'package:mobile_app_starter/src/shared/widgets/app_text_heading.dart';
 
@@ -11,29 +12,29 @@ class AboutScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('À propos'),
+        title: Text('About'.hardcoded),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(
             horizontal: Sizes.p16, vertical: Sizes.p16),
         child: ListView(
-          children: const [
+          children: [
             gapH16,
-            AppTextHeading(text: 'À propos de '),
+            AppTextHeading(text: 'About'.hardcoded),
             gapH4,
-            AppTextBody(text: Constants.aboutTitleSectionText),
+            const AppTextBody(text: Constants.aboutTitleSectionText),
             gapH4,
-            AppTextHeading(text: 'Mission'),
+            AppTextHeading(text: 'Mission'.hardcoded),
             gapH4,
-            AppTextBody(text: Constants.aboutMissionSectionText),
+            const AppTextBody(text: Constants.aboutMissionSectionText),
             gapH4,
-            AppTextHeading(text: 'Fonctionnalités'),
+            AppTextHeading(text: 'Features'.hardcoded),
             gapH4,
-            AppTextBody(text: Constants.aboutFeaturesSectionText),
+            const AppTextBody(text: Constants.aboutFeaturesSectionText),
             gapH4,
-            AppTextHeading(text: 'Contact'),
+            AppTextHeading(text: 'Contact'.hardcoded),
             gapH4,
-            AppTextBody(text: Constants.aboutContactSectionText),
+            const AppTextBody(text: Constants.aboutContactSectionText),
             gapH16,
           ],
         ),

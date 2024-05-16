@@ -1,6 +1,4 @@
 class Constants {
-  static const String backendBaseUrl = 'http://127.0.0.1:3000';
-
   static const String aboutTitleSectionText =
       'Bienvenue sur App, l’application révolutionnaire qui transforme '
       'les ingrédients de votre réfrigérateur en délicieuses recettes. '

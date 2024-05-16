@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:mobile_app_starter/src/constants/app_colors.dart';
 import 'package:mobile_app_starter/src/constants/app_sizes.dart';
+import 'package:mobile_app_starter/src/localization/string_hardcoded.dart';
 import 'package:mobile_app_starter/src/routing/app_router.dart';
 import 'package:mobile_app_starter/src/shared/widgets/app_divider.dart';
 import 'package:mobile_app_starter/src/shared/widgets/app_list_tile.dart';
@@ -20,7 +21,7 @@ class _AccountScreenState extends ConsumerState<AccountScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Mon Compte'),
+        title: Text('Account'.hardcoded),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(
@@ -50,34 +51,34 @@ class _AccountScreenState extends ConsumerState<AccountScreen> {
             ),
             gapH16,
             AppListTile(
-                title: 'Modifier Mes Informations',
+                title: 'Update my information'.hardcoded,
                 onTap: () =>
                     context.goNamed(AppRoute.editMyInformationScreen.name)),
             const AppDivider(),
             gapH8,
             AppListTile(
-              title: 'A Propos',
+              title: 'About'.hardcoded,
               onTap: () => context.goNamed(AppRoute.aboutScreen.name),
             ),
             const AppDivider(),
             AppListTile(
-                title: 'Faire Une Demande',
+                title: 'Send a request'.hardcoded,
                 onTap: () => context.goNamed(AppRoute.sendRequestScreen.name)),
             const AppDivider(),
             AppListTile(
-              title: 'Termes & Conditions',
+              title: 'Terms & Conditions'.hardcoded,
               onTap: () =>
                   context.goNamed(AppRoute.termsAndConditionsScreen.name),
             ),
             const AppDivider(),
             AppListTile(
-              title: 'Politique De Confidentialité',
+              title: 'Privacy Policy'.hardcoded,
               onTap: () => context.goNamed(AppRoute.privacyPolicyScreen.name),
             ),
             const AppDivider(),
             Center(
               child: AppTextButton(
-                text: 'Se déconnecter',
+                text: 'Sign out'.hardcoded,
                 onPressed: () => (),
               ),
             ),

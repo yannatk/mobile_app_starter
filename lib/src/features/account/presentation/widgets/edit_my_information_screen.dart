@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mobile_app_starter/src/constants/app_sizes.dart';
 import 'package:mobile_app_starter/src/features/account/presentation/widgets/edit_my_information_form.dart';
+import 'package:mobile_app_starter/src/localization/string_hardcoded.dart';
 
 class EditMyInformationScreen extends StatefulWidget {
   const EditMyInformationScreen({super.key});
@@ -15,7 +16,7 @@ class _EditMyInformationScreenState extends State<EditMyInformationScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Modifier Mes Informations'),
+        title: Text('Update My Information'.hardcoded),
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(

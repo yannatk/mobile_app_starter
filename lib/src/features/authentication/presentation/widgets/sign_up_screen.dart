@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:mobile_app_starter/src/constants/app_colors.dart';
 import 'package:mobile_app_starter/src/constants/app_sizes.dart';
 import 'package:mobile_app_starter/src/features/authentication/presentation/widgets/sign_up_form.dart';
+import 'package:mobile_app_starter/src/localization/string_hardcoded.dart';
 import 'package:mobile_app_starter/src/routing/app_router.dart';
 import 'package:mobile_app_starter/src/shared/widgets/app_text_button.dart';
 
@@ -23,9 +24,9 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Inscription',
-          style: TextStyle(color: AppColors.green),
+        title: Text(
+          'Register'.hardcoded,
+          style: const TextStyle(color: AppColors.green),
         ),
       ),
       body: Padding(
@@ -36,7 +37,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
             gapH16,
             AppTextButton(
               onPressed: _goToSignIn,
-              text: 'Vous avez déjà un compte ? Connectez-vous',
+              text: 'Already have an account? Log in'.hardcoded,
             ),
             gapH16,
           ],

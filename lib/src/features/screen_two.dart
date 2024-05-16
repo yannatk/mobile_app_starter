@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobile_app_starter/src/localization/string_hardcoded.dart';
 
 class ScreenTwo extends StatelessWidget {
   const ScreenTwo({super.key});
@@ -7,10 +8,10 @@ class ScreenTwo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Screen two'),
+        title: Text('Screen two'.hardcoded),
       ),
-      body: const Center(
-        child: Text('ScreenTwo'),
+      body: Center(
+        child: Text('ScreenTwo'.hardcoded),
       ),
     );
   }
