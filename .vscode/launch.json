@@ -11,13 +11,25 @@
         },
         {
             "name": "Get Packages",
-            "command": "flutter pub get",
+            "command": "f pub get",
             "request": "launch",
             "type": "node-terminal"
         },
         {
             "name": "Build Runner",
-            "command": "dart run build_runner build --delete-conflicting-outputs",
+            "command": "d run build_runner build --delete-conflicting-outputs",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "name": "Launcher Icons",
+            "command": "f pub run flutter_launcher_icons -f flutter_launcher_icons.yaml",
+            "request": "launch",
+            "type": "node-terminal"
+        },
+        {
+            "name": "Native Splash",
+            "command": "d run flutter_native_splash:create --path=flutter_native_splash.yaml",
             "request": "launch",
             "type": "node-terminal"
         }
