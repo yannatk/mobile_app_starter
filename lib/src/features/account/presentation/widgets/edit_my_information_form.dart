@@ -46,7 +46,7 @@ class _EditMyInformationFormState extends ConsumerState<EditMyInformationForm>
             'Info updated successfully'.hardcoded,
             style: const TextStyle(color: AppColors.white),
           ),
-          backgroundColor: AppColors.green,
+          backgroundColor: AppColors.black,
         ),
       );
 

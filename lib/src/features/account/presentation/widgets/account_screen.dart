@@ -33,7 +33,7 @@ class _AccountScreenState extends ConsumerState<AccountScreen> {
               child: Column(
                 children: [
                   const CircleAvatar(
-                    backgroundColor: AppColors.green,
+                    backgroundColor: AppColors.black,
                     foregroundColor: AppColors.white,
                     radius: Sizes.p32,
                     child: Icon(Icons.person, size: Sizes.p24),

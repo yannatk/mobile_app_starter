@@ -26,7 +26,7 @@ class _SignUpScreenState extends ConsumerState<SignUpScreen> {
       appBar: AppBar(
         title: Text(
           'Register'.hardcoded,
-          style: const TextStyle(color: AppColors.green),
+          style: const TextStyle(color: AppColors.black),
         ),
       ),
       body: Padding(

@@ -41,7 +41,7 @@ class _PasswordFieldState extends State<PasswordField> {
           child: Icon(
             semanticLabel: 'togglePasswordVisibility',
             _obscureText ? Icons.visibility : Icons.visibility_off,
-            color: AppColors.green,
+            color: AppColors.black,
           ),
         ),
         labelStyle: const TextStyle(color: AppColors.grey),

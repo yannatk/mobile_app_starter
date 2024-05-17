@@ -26,7 +26,7 @@ class _SignInScreenState extends ConsumerState<SignInScreen> {
       appBar: AppBar(
         title: const Text(
           'Connexion',
-          style: TextStyle(color: AppColors.green),
+          style: TextStyle(color: AppColors.black),
         ),
       ),
       body: Padding(

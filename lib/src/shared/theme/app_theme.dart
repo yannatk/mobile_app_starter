@@ -10,40 +10,40 @@ ThemeData appTheme() {
       foregroundColor: AppColors.black,
       elevation: 0,
     ),
-    primaryColor: AppColors.green,
+    primaryColor: AppColors.black,
     buttonTheme: const ButtonThemeData(
-      buttonColor: AppColors.green,
+      buttonColor: AppColors.black,
       textTheme: ButtonTextTheme.primary,
     ),
     scaffoldBackgroundColor: AppColors.white,
     outlinedButtonTheme: OutlinedButtonThemeData(
       style: OutlinedButton.styleFrom(
         foregroundColor: AppColors.white,
-        backgroundColor: AppColors.green,
-        side: const BorderSide(color: AppColors.green),
+        backgroundColor: AppColors.black,
+        side: const BorderSide(color: AppColors.black),
       ),
     ),
     textButtonTheme: TextButtonThemeData(
       style: TextButton.styleFrom(
-        foregroundColor: AppColors.green,
+        foregroundColor: AppColors.black,
       ),
     ),
     floatingActionButtonTheme: const FloatingActionButtonThemeData(
-      backgroundColor: AppColors.green,
+      backgroundColor: AppColors.black,
       foregroundColor: AppColors.white,
     ),
     navigationBarTheme: NavigationBarThemeData(
       surfaceTintColor: AppColors.white,
       backgroundColor: AppColors.white,
-      indicatorColor: AppColors.green,
+      indicatorColor: AppColors.black,
       iconTheme: MaterialStateProperty.all(
         const IconThemeData(color: AppColors.grey),
       ),
     ),
-    iconTheme: const IconThemeData(color: AppColors.green),
+    iconTheme: const IconThemeData(color: AppColors.black),
     iconButtonTheme: IconButtonThemeData(
       style: ButtonStyle(
-        iconColor: MaterialStateProperty.all(AppColors.green),
+        iconColor: MaterialStateProperty.all(AppColors.black),
       ),
     ),
     searchBarTheme: SearchBarThemeData(
